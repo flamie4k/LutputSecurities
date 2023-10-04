@@ -1,0 +1,515 @@
+/* Comic Nueue */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Comic+Neue:wght@300&display=swap');
+/* Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap');
+/* Mukta. The font being used. */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+*{
+    padding:0;
+    margin:0;
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    /*font-family: 'Comic Neue', cursive; */
+    font-family: 'Mukta', sans-serif;
+}
+/* DESIGNING INDEX */
+#JP{
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Comic Neue', cursive;
+}
+#disclamer{
+    text-align: center;
+    font-size: smaller;
+    color: blue;
+    padding-top: 15px;    
+    padding-bottom: 15px;
+}
+#disclamer:hover{
+    text-decoration: underline;
+}
+.nav{
+    display: flex;
+    background-color: cadetblue;
+}
+.nav_logo{
+    display: flex;
+}
+.logo_img{
+    padding: 20px;
+    background-image: url("images/favicon.png");
+    height: 120px;
+    width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo_text{
+    padding: 20px;
+    text-align: center;
+}
+.logo_text p{
+    padding: 10px;
+}
+.nav_list{
+    padding:20px;
+    padding-left: 24%;
+    padding-top: 2.75%;
+}
+.nav_list ul {
+    list-style-type: none;
+}
+.nav_list li {
+    float: left;
+}  
+.nav_list li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav_list li:hover{
+    text-decoration: underline;
+}
+.dropdown {
+    position: relative;
+
+    display: inline-block;
+}
+.dropdown a {
+    display: block;
+    color: black;
+    border: 2px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: cadetblue;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding-top:10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: darkcyan;
+    text-decoration: underline;
+}
+.body_nav{
+padding-left : 20%;
+width: auto;
+
+height: 25px;
+padding-bottom: 20px;
+}
+.body_nav ul{
+    list-style-type: none;
+}
+.body_nav li{
+    float: left;
+}
+.body_nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.body_nav li:hover{
+    text-decoration: underline;
+}
+/* BODY STYLING */
+body{
+    background-image: url("images/fabric_1.png");
+}
+.welcome_section{
+    padding: 20px;
+    display: flex;
+    height: 220px;
+    background-color: rgba(93, 173, 213, 0.1);
+    padding-left: 300px;
+}
+.stonks_cat{
+    background-image: url("images/stonks.jpg");
+    height: 200px;
+    width: 400px;
+    transform: rotate(-5deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.welcome_section:hover .stonks_cat{
+    transform: rotate(0deg);
+    transition: 0.27s ease;
+}
+.stonks_text p{
+    text-align: left;
+    font-weight: lighter;
+    font-size: large;
+}
+.director_message{
+    height: fit-content;
+    width: auto;    
+    background-color: rgba(93, 173, 213, 0.1);
+    padding: 30px;
+}
+.director_message h1{
+    text-align: center;
+
+}
+.director_img{
+    background-image: url("images/director.jpg");
+    height: 400px;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 22%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.director_txt{
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+}
+#span_in_director_txt{
+    text-align: left;
+    text-decoration: underline;
+}
+#notice_txt{
+    margin-left: 15%;
+    padding-top: 20px;
+}
+.latest_notices{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    line-height: 25px;
+    height: fit-content;
+    padding-bottom: 50px;
+    margin-top:10px;
+}
+.notice_1{
+    height: 550px;
+    width: 355px;
+    background-color: rgba(93, 173, 213, 0.1);
+}
+.notice_1 .notice_1_img{
+    background-image: url("images/6th_yr_img.jpg");
+    height: 300px;
+    margin-top:30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 355px;
+}
+.notice_2{
+    height: 550px;
+    width: 355px;
+    background-color: rgba(93, 173, 213, 0.1);
+}
+.notice_2 .notice_2_img{
+    height: 300px;
+    width: 275px;
+    margin-left: 45px;
+    margin-top : 30px;
+    background-image: url("images/menacing_graph.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.notice_2 .notice_2_txt{
+    height: fit-content;
+    width: 350px;
+    padding-left:3px;
+    padding-right:6px;
+    margin-top:30px
+}
+.notice_3{
+    height: 550px;
+    width: 355px;
+    background-color: rgba(93, 173, 213, 0.1);
+}
+.notice_3 .notice_3_img{
+    background-image: url("images/job_vacancy.png");
+    width: 355px;
+    height: 170px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.notice_3 .notice_3_txt{
+    height: fit-content;
+    width: 350px;
+    padding-left:3px;
+    padding-right:6px;
+}
+.notice_1:hover{
+    background-color: rgba(93, 173, 213, 0.6);
+}
+.notice_2:hover{
+    background-color: rgba(93, 173, 213, 0.6);
+}
+.notice_3:hover{
+    background-color: rgba(93, 173, 213, 0.6);
+}
+#read_more{
+    text-align: right;
+}
+#read_more:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.footer{
+    height: 100px;
+    width: auto;
+    position: relative;
+    background-color: cadetblue;
+    color: black;
+}
+.copyright_txt{
+    position: absolute;
+    bottom:5px;
+    right: 25px;
+}
+/* DESIGNING INDEX PAGE IS DONE. OTHER PAGES ONLY SHARE NAV BARS, BODY AND FOOTERS WITH INDEX */
+/* DESIGNING about.html */
+.about_container{
+    text-align: center;
+}
+.about_container h3{
+    text-align: center;
+    font-size: larger;
+}
+.about_us{
+    background-color: rgba(93, 173, 213, 0.1); 
+    padding: 20px;
+}
+.our_story{
+    background-color: rgba(93, 173, 213, 0.1); 
+    padding: 20px
+}
+.our_vison{
+    background-color: rgba(93, 173, 213, 0.1); 
+    padding: 20px
+}
+.our_mission{
+    background-color: rgba(93, 173, 213, 0.1); 
+    padding: 20px
+}
+.our_motto{
+    background-color: rgba(93, 173, 213, 0.1); 
+    padding: 20px
+}
+/* DESIGNING stock.html */
+.live_header{
+    text-align: center;
+    background-color: rgba(93, 173, 213, 0.1);
+}
+.live_chart{
+    height: fit-content;
+    width: 100%;
+}
+/* DESIGNING our_team.html */
+.team_container{
+    text-align: center;
+}
+.team_header{
+    background-color: rgba(93, 173, 213, 0.1);
+    padding-bottom:20px;
+}
+.team_img{
+    display: flex;
+    justify-content:space-evenly;
+}
+.team_1{
+    background-image: url("images/ms_lutput.jpg");
+    height: 300px;
+    margin-left: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+}
+.team_2{
+    background-image: url("images/setu.jpg");
+    height: 300px;
+    margin-left: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+}
+.team_3{
+    background-image: url("images/puttutu_smol.jpg");
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+}
+.team_4{
+    background-image: url("images/kalu.jpg");
+    height: 300px;
+    margin-left: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+}
+.team_5{
+    background-image: url("images/khairu.jpg");
+    height: 300px;
+    margin-left: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+}
+.team_6{
+    background-image: url("images/puttutu_big.jpg");
+    height: 300px;
+    margin-left: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 380px;
+}
+.team_descp{
+    display: flex;
+    float: right;
+    justify-content: space-around;
+}
+#team_table{
+    background-color: rgba(93, 173, 213, 0.1);
+    margin-left: 21px;
+    padding-top: 15px;
+}
+#team_table p {
+    text-align: center;
+}
+/* DESIGNING fees.html */
+.fees_container h2,h3{
+text-align: center;
+}
+#equity_table{
+    background-color: rgba(93, 173, 213, 0.1);
+    margin-left: 35%;
+    margin-bottom:50px;
+    text-align: center;
+    border-collapse:collapse;
+}
+#equity_table td,th{
+    padding: 5px;
+}
+/* DESIGNING Our_services.html */
+.services_container{
+    height: fit-content;
+    width: auto;
+}
+.services_container h3 , .services_container h4 ,.services_container p{
+    text-align: center;
+}
+.securities_banner{
+    background-image: url("/images/banner.png");
+    height: 500px;
+    width: 800px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.services_points{
+    padding-top:50px;
+}
+.services_ul{
+    margin-bottom: 25px;
+}
+/* DESIGNING news.html */
+.news_container h4{
+text-align: center;
+}
+.sixth_aniv_img{
+background-image: url("images/6th_yr_img.jpg");
+height: 475px;
+width: 650px;
+background-repeat: no-repeat;
+margin-left: 28.5%;
+background-size: contain;
+}
+.image_bg{
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(93, 173, 213, 0.1);
+}
+.sixth_aniv_txt{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: rgba(93, 173, 213, 0.1);
+}
+#news_h4{
+    background-color: rgba(93, 173, 213, 0.1);
+}.button_none {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    color: cadetblue;
+    text-decoration: underline;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+}
+.hot_keys{
+    padding: 5px;
+    display: flex;
+    float: left;
+    margin-left:37% ;
+}
+.job_vacancy_img{
+    background-image: url("images/job_vacancy.png");
+    height: 280px;
+    width: 700px;
+
+    background-repeat: no-repeat;   
+    background-size: contain;
+    margin-left: 28%;
+}
+.job_vacancy_txt{
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: rgba(93, 173, 213, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.job_vacancy_txt p{
+    text-align: center;
+}
+#news_h3_exceptions{
+    text-align: left;
+}
+.account_registration_post{
+    padding-left: 20px;
+    margin-top: 25px;
+    background-color: rgba(93, 173, 213, 0.1);
+}
+.account_registration_post li{
+    list-style-type: circle;
+    margin-left: 3%;
+}
+/* DESIGNING downloads.html */
+.download_container{
+    text-align: center;
+}
+.download_container h3{
+    background-color: rgba(93, 173, 213, 0.1);
+}
+#download_table{
+    background-color: rgba(93, 173, 213, 0.1);
+    margin-left: 37%;
+}
+#download_table td{
+    padding: 20px;
+}
