@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Lutput Securities Account Registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+        body {
+            font-family: 'Mukta', sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-right: 50px;
+            width: 900px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            background-color: rgba(93, 173, 271, 0.1);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left:40% ;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h2{
+            text-align: center;
+            background-color: rgba(93, 173, 271, 0.1);
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .form_div p{
+            text-align: center;
+            background-color: rgba(93, 173, 271, 0.1);
+            padding: 20px;
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_logo">
+            <div class="logo_img"></div>
+            <div class="logo_text">
+                <p>लुटपुट सेक्युरिटिज कम्पनी लिमिटेड</p>
+                <p>Lutput Securities Company Limited</p>
+                <p id="JP">ルプット証券会社</p>
+            </div>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li>
+                    <a href="ERROR.html">Lutpus Share Login</a>
+                </li>
+                <li>
+                    <a href="ERROR.html">Online Trading Login</a>
+                </li>
+                <li>
+                    <a href="ERROR.html">TMS Account Registration</a>
+                </li>
+                <div class="dropdown">
+                    <a href="#">Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="https://www.facebook.com/profile.php?id=61551699311967" id="facebook_login">Contact us through Facebook</a>
+                        <a href="ERROR.html">Contact us through Viber</a>
+                        <a href="ERROR.html">Contact us through Phone</a>
+                        <a href="mailto:contact.us@lutputsecurities.com.np">Contact us through mail</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="body_nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="our_team.html">Our Team</a></li>
+            <li><a href="our_services.html">Our Services</a></li>
+            <li><a href="fees.html" id="fee">Fee & Comissions</a></li>
+            <li><a href="stock.html">Stock Data</a></li>
+            <li><a href="news.html">News & Notices</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+    </div>
+    <div class="form_div">
+    <br><br>
+    <h2>Create an Account with Lutput Securities</h2>
+    <br>
+    <form action="process_registration.php" method="POST">
+        <div>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+
+        <div>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div>
+            <label for="investment-type">Preferred Investment Type:</label>
+            <select id="investment-type" name="investment-type">
+                <option value="stocks">Stocks</option>
+                <option value="bonds">Bonds</option>
+                <option value="mutual-funds">Mutual Funds</option>
+                <option value="real-estate">Real Estate</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        </div>
+
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Log in here</a></p>
+</div>
+</body>
+
+</html>
